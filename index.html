@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+  rel="stylesheet"
+/>
+</head>
+
+<body>
+    <div class="outerContainer">
+        <div id="container">
+            <div id="div1">
+                <p>Eric Zheng, <b id="aniTxt">ASU</b> Computer Science Student</p>
+                <br>
+                <a href="#container2">
+                    <p id="learnBtn">Projects</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="container2">
+        <div id="div2">
+            <a href="#container" id="arrow"><img src="photos/UpArrow.png" alt="up" height="50rem" width="50rem"></a>
+            <h1 id="projectTxt">My Projects</h1>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide w-75" data-mdb-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-mdb-target="#carouselExampleIndicators"
+                data-mdb-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-mdb-target="#carouselExampleIndicators"
+                data-mdb-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-mdb-target="#carouselExampleIndicators"
+                data-mdb-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://thedeveric.github.io/Restaurant/" target="_blank"><img src="photos/restaurant.png" class="d-block w-100" alt="Wild Landscape"/></a>
+              </div>
+              <div class="carousel-item">
+               <a href="https://thedeveric.github.io/CssAnimation/" target="_blank"> <img src="photos/animation.png" class="d-block w-100" alt="Camera"/></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://thedeveric.github.io/Random-Phrase-Generator/" target="_blank"><img src="photos/generator.png" class="d-block w-100" alt="Exotic Fruits"/></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</body>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+
+</html>

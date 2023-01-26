@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+
+.outerContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*space effect*/
+#container {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#div1 {
+    color: #FEFCD7;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    animation: floating 3.5s linear infinite;
+    margin-right: 20px;
+}
+
+#learnBtn {
+    height: 50px;
+    width: 270px;
+    font-size: 20px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    color: black;
+    background-color: #FEFCD7;
+    transition: 1s;
+}
+
+#learnBtn:hover{
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.star{
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    animation: star 2s linear;
+    opacity: 0;
+}
+
+/*Projects*/
+#container2{
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projectTxt{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    line-height: 100px;
+    font-size: 45px;
+    background: -webkit-linear-gradient(#4c408e,#0c1445);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#arrow{
+    border-radius: 100%;
+    transition: 0.5s;
+    animation: bounce 1.5s linear infinite;
+}
+
+#arrow:hover{
+    background-color: #0c144551;
+}
+
+/*animation*/
+#aniTxt {
+    animation: colorChange 4s linear infinite;
+    color: maroon;
+}
+
+@keyframes bounce{
+  0%{
+    transform: translateY(-9.%);
+  }
+  50%{
+    transform: translateY(25.5%);
+  }
+  100%{
+    transform: translateY(-9.%)
+  }
+}
+
+@keyframes colorChange {
+    0% {
+        color: maroon;
+    }
+
+
+    50% {
+        color: gold;
+    }
+
+    100%{
+        color: maroon;
+    }
+}
+
+@keyframes floating {
+    0%{
+        margin-right: 30px;
+    }
+
+    25%{
+        margin-bottom: 20px;
+    }
+
+    50%{
+        margin-left: -20px;
+    }
+
+    75%{
+        margin-top: 20px;
+    }
+
+    100%{
+        margin-right: 30px;
+    }
+}
+
+@keyframes star {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
